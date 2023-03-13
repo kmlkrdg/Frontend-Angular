@@ -4,8 +4,6 @@ import {
     ValidationErrors,
     AbstractControl,
   } from '@angular/forms';
-
-
   export function BirhdateValidator(): ValidatorFn {
     var validationFunction = (
       control: AbstractControl

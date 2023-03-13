@@ -1,6 +1,5 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-9 offset-md-3 mt-3">
+
+    <div class="col-md-6 offset-md-5 mt-5">
       <form [formGroup]="visitorForm" (ngSubmit)="save()">
         <div class="form-group">
           <label for="exampleInputPassword1">Name:</label>
@@ -93,17 +92,17 @@
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3">Send</button>
+        <button type="submit" class="btn btn-dark mt-2">Send</button>
       </form>
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">Name:</th>
-            <th scope="col">E-Mail:</th>
-            <th scope="col">Content:</th>
-            <th scope="col">Birth-Date:</th>
-            <th scope="col">The Duration of your Comment:</th>
-            <th scope="col">Content Type:</th>
+            <th scope="col">Name</th>
+            <th scope="col">E-Mail</th>
+            <th scope="col">Content</th>
+            <th scope="col">Birth-Date</th>
+            <th scope="col">Publish Date Expire</th>
+            <th scope="col">Content Type</th>
           </tr>
         </thead>
         <tbody>
@@ -118,5 +117,5 @@
         </tbody>
       </table>
     </div>
-  </div>
-</div>
+
+

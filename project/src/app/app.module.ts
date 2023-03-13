@@ -35,7 +35,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     SharedModule,
     FormsModule
-    
+
 
   ],
   providers: [],
