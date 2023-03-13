@@ -1,0 +1,33 @@
+
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Name:</th>
+            <th>E-mail:</th>
+            <th>Content:</th>
+            <th>Birthdate:</th>
+            <th>The Duration of your Comment:</th>
+            <th>Content Type:</th>
+            <th>Delete or Confirm:</th>
+            <th>Confirm:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-text" *ngFor="let visitor of visitorService.visitors">
+            <th>{{ visitor?.name }}</th>
+            <th>{{ visitor?.email }}</th>
+            <th>{{ visitor?.content }}</th>
+            <th>{{ visitor?.birthDate }}</th>
+            <th>{{ visitor?.publishdateExpire }}</th>
+            <th>{{ visitor?.contentType }}</th>
+            <button class="btn btn-danger" (click)="visitorService.deleteVisitor(visitor.email)">Delete</button>
+            <label for="">Confirm</label>
+            <input type="checkbox" [(ngModel)]="isChecked"  (change)="checkValue(isChecked? visitor.isConfirmed = true : visitor.isConfirmed = false)" [disabled]=" visitor.isConfirmed" >
+            <th>{{ visitor?.isConfirmed }}</th>
+          </tr>
+        </tbody>
+      </table>
+
+
+
