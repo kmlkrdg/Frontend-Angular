@@ -1,6 +1,7 @@
+//Kullanıcağım componentleri adreslerini import ediyorum.
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './main/home/home.component';
@@ -16,6 +17,8 @@ import { AdminPostDetailComponent } from './admin/admin-post-detail/admin-post-d
 import { AdminUserDetailComponent } from './admin/admin-user-detail/admin-user-detail.component';
 import { FormsModule } from '@angular/forms';
 
+//Kullanıcağım componentleri tanımlıyorum.
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,15 +33,16 @@ import { FormsModule } from '@angular/forms';
     AdminPostDetailComponent,
     AdminUserDetailComponent
   ],
+  //Alt modülleri tanımlıyorum.
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
     FormsModule
-
-
   ],
+  //Burada bir servisim yok.
   providers: [],
+  //Ana Komponentimi burada tanımlıyorum.
   bootstrap: [AppComponent]
 })
 export class AppModule { }

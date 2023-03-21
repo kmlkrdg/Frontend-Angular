@@ -1,4 +1,4 @@
-
+//Visitor Sayfasında Yorum giren kullanıcılar için yaşlarının 16 dan büyük olması gerekliliği için doğrulama Hatası
 import {
     ValidatorFn,
     ValidationErrors,

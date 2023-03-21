@@ -1,9 +1,11 @@
+
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
 import { Post } from '../models/post';
 import { from, map, switchMap } from 'rxjs';
 import { User } from '../models/user';
 
+//Burada Admin kısmında Jsonplaceholder dan alacağımız Kullanıcı ve Post bilgilerini tanımlıyoruz.
 @Injectable({
   providedIn: 'root'
 })

@@ -13,15 +13,16 @@ import { VisitorsBookComponent } from './main/visitors-book/visitors-book.compon
 import { AdminLayoutComponent } from './shared/admin-layout/admin-layout.component';
 import { MainLayoutComponent } from './shared/main-layout/main-layout.component';
 
+// Constructer içerisinde Sayfalarımın route ediyoruz. Admin ve Main sayfa değişimi için routelarını import ediyorum.
 const routes: Routes = [
-  {path:'',component:MainLayoutComponent,children: [
+    {path:'',component:MainLayoutComponent,children: [
     {path:'',component:HomeComponent},
     {path:'home',component:HomeComponent},
     {path:'about',component:AboutComponent},
     {path:'gallery',component:GalleryComponent},
     {path:'visitors-book',component:VisitorsBookComponent},
   ]},
-  {path:'admin',component:AdminLayoutComponent,children: [
+    {path:'admin',component:AdminLayoutComponent,children: [
     {path:'admin-home',component:AdminHomeComponent},
     {path:'admin-post-page',component:AdminPostPageComponent},
     {path:'admin-user-page',component:AdminUserPageComponent},
